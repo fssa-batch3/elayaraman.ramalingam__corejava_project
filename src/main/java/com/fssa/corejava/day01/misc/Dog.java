@@ -28,8 +28,9 @@ public class Dog {
         this.color = color;
     }
 
-		public void speak() {
-        System.out.println("Woof!");
+		public String speak() {
+        String str ="Woof!";
+        return str;
     }
 
     // Main method to create Dog objects
@@ -47,6 +48,6 @@ public class Dog {
         System.out.println("Dog 2:");
         System.out.println("Has Dots: " + dog2.hasDots());
         System.out.println("Color: " + dog2.getColor());
-				System.out.println("Speaks: " + dog1.speak()
+				System.out.println("Speaks: " + dog1.speak());
     }
 }
