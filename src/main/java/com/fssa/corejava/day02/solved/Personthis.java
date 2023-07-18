@@ -12,8 +12,11 @@ public class Personthis {
 			this.name = name; // this Keyword used for referring current instance
     }
 
+    public static void main(String[] args) {
+        Person person = new Person();
+        person.setName("John");      // Setting the name using the setter method
+        String name1 = person.getName();  // Accessing the name using the getter method
+        System.out.println(name1);}
 }
-Person person = new Person();
-person.setName("John");      // Setting the name using the setter method
-String name1 = person.getName();  // Accessing the name using the getter method
-System.out.println(name1);}   
+
+
