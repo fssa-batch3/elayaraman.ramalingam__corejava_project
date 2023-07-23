@@ -1,6 +1,8 @@
-package com.fssa.corejava.day04.solved;
+// package com.fssa.corejava.day04.solved;
 
-public class AnotherClass extends Square {
+// public class AnotherClass extends Square {
+
+    
 
 
-}
+// }
