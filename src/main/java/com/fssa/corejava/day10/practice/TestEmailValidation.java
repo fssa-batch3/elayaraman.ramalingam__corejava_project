@@ -4,14 +4,10 @@ import java.util.*;
 
 public class TestEmailValidation {
 	
-	public static void main(String[] Args) throws InvalidEmailException{
+	public static void main(String[] Args) throws InvalidEmailException, UserAlreadyExistsException{
 		
-		List<User> users= new ArrayList<>();
-		
-		try {
-			users.add(new User(1,"name","email"));
-		}catch(Exception e) {
-			System.out.println(e.getMessage());
-		}
+		UserServices list = new UserServices();
+		list.addUser(1, "email@gmail", "email@gmail.com");
+		list.addUser(2, "email@gmail", "email2@gmail.com");
 	}
 }

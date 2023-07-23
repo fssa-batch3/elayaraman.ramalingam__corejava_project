@@ -3,21 +3,22 @@ package com.fssa.corejava.day10.practice;
 public class User {
 
 	int id;
-	String name;
-	String email;
-
-	public User(int id, String name, String email) throws InvalidEmailException, UserAlreadyExistsException {
-		setId(id);
-		this.name = name;
-		setEmail(email);
-	}
-
+	
 	public int getId() {
 		return id;
 	}
 
-	public void setId(int id)throws UserAlreadyExistsException {
+	public void setId(int id) {
 		this.id = id;
+	}
+
+	String name;
+	String email;
+
+	public User(int id,String name, String email) throws InvalidEmailException, UserAlreadyExistsException {
+		this.id = id;
+		this.name = name;
+		setEmail(email);
 	}
 
 	public String getName() {
